@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #ffffff; /* pure white background */
+  color: #111111; /* dark gray text for readability */
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px; /* reduced from 400px to 40px */
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+.logo {
+  color: #111111;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;      /* remove bullets */
+  display: flex;          /* horizontal layout */
+  gap: 20px;             /* space between links */
+  margin: 0;             /* remove default UL margin */
+  padding: 0;            /* remove default UL padding */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111111;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #6366f1; /* soft purple accent */
+}
+
+/* HERO */
+.hero {
+  padding: 100px 20px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.blue-text {
+  color: #2275c1;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #555555; /* subtle gray */
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 60%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  background-color: #6366f1; /* soft purple accent */
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4f46e5;
+  transform: translateY(-3px);
+}
+
+/* PROJECTS */
+.projects {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.project-card {
+  flex: 1 1 calc(50% - 15px); /* 2 per row */
+  max-width: calc(50% - 15px);
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.project-card p {
+  color: #555555;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+/* ABOUT ME */
+.aboutme {
+  padding: 100px 20px;
+  background-color: #000000; 
+}
+
+.aboutme-container {
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
+  max-width: 1000px;
+  margin: auto;
+  gap: 40px;
+  flex-wrap: wrap;          /* stacks on small screens */
+}
+
+.aboutme-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.aboutme-text h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.aboutme-text p {
+  font-size: 18px;
+  color: #ffffff;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+/* Skill cards side */
+.aboutme-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards side by side */
+  gap: 20px;
+  /* center the grid horizontally inside its flex item */
+  margin: 0 auto;
+}
+
+.aboutme-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: #000000;
+}
+
+.aboutme-card img {
+  width: 60px;
+  margin-bottom: 12px;
+}
+
+.aboutme-card h3 {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  color: #111111;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #777777;
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: row; /* stack vertically on mobile if desired */
+    gap: 10px;
+  }
+    
+  .hero-container {
+  flex-direction: column-reverse;
+  text-align: center;
+  gap: 20px;
+  }
+
+  .hero-text h1 {
+  font-size: 30px;
+  }
+
+  .blue-text {
+  font-size: 30px;
+  }
+
+  .hero-text p {
+  font-size: 16px;
+  }
+
+  .btn {
+  padding: 6px 20px;
+  }
+
+  .project-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .projects {
+    padding: 40px 16px;
+  }
+
+  .projects h2 {
+  font-size: 26px;
+  }
+  
+  .projects h3 {
+  font-size: 20px;
+  }
+
+  .aboutme-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .aboutme-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
