@@ -43,13 +43,21 @@
 
    <div class="projects-container">
     <div class="project-card">
+      <img src="assets/mindwellness.PNG" alt="MindWellness">
       <h3>Mental Health Web App</h3>
       <p>An interactive web app focused on mental well-being.</p>
+      <a href="https://arysamht.github.io/mindwellness/"
+      target="_blank"
+      class="btn btn-warning">View</a>
     </div>
 
     <div class="project-card">
-      <h3>Portfolio Website</h3>
+      <img src="assets/portfolio.PNG" alt="This Portfolio">
+      <h3>This Portfolio Website</h3>
       <p>A personal website built with HTML, CSS, and JavaScript.</p>
+      <a href="https://arysamht.github.io/arissatan.github.io/"
+      target="_blank"
+      class="btn btn-warning">View</a>
     </div>
    </div>
   </section>
@@ -84,10 +92,63 @@
 </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: arysamht@gmail.com</p>
-  </section>
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="card shadow border-0 rounded-4">
+          <div class="card-body p-4 p-md-5">
+
+            <h2 class="text-center mb-4 fw-bold">Get In Touch</h2>
+
+            <!-- SUCCESS MESSAGE -->
+            <div id="formSuccess" class="alert alert-success d-none">
+              ✅ Your message has been sent successfully!
+            </div>
+
+            <form id="contactForm"
+                  action="https://formspree.io/f/mnjbjrpq"
+                  method="POST">
+
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input type="text" name="name" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Email Address</label>
+                  <input type="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label">Subject</label>
+                  <input type="text" name="subject" class="form-control" required>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label">Message</label>
+                  <textarea name="message" rows="5" class="form-control" required></textarea>
+                </div>
+
+                <div class="col-12 text-center mt-3">
+                  <button type="submit" class="btn btn-info px-4 py-2 rounded-pill">
+                    Send Message
+                  </button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer>
