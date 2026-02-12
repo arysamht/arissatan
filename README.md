@@ -10,8 +10,8 @@ This repository contains my personal frontend development portfolio.
 </p>
 
 ## Technologies Used
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 - Bootstrap
 
