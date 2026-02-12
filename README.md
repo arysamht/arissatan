@@ -5,6 +5,10 @@ This repository contains my personal frontend development portfolio.
 ## Live Portfolio
 🔗 https://arysamht.github.io/arissatan/
 
+<p>
+  <img src="assets/portfolio.png" alt="Portfolio" width="45%" style="margin-right:5px;"/><br>
+</p>
+
 ## Technologies Used
 - HTML5
 - CSS3
